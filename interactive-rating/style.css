@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+/* Variables */
+:root{
+    /* Primary Colors */
+    --orange: hsl(25, 97%, 53%);
+    /* Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Light-grey: hsl(217, 12%, 63%);
+    --Medium-grey: hsl(216, 12%, 54%);
+    --Medium-grey-img: hsl(217, 7%, 36%);
+    --Dark-blue: hsl(213, 19%, 18%);
+    --Very-dark-blue: hsl(216, 12%, 8%);
+    /* Paragraghs */
+    --paragragh-font: 15px;
+    --ff-heading: 'Overpass', sans-serif;
+
+}
+
+/* Global Styles */
+*,
+::after,
+::before{
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--ff-heading);
+    background: var(--Very-dark-blue);
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+    color: var(--White);
+}
+h2{
+    font-family: var(--ff-heading);
+    color: var(--White);
+    font-weight: 700;
+    font-size: 2rem;
+}
+p{
+    font-family: var(--ff-heading);
+    font-weight: 400;
+    color: var(--Light-grey);
+}
+main{
+    min-height: 70vh;
+    display: grid;
+    place-items: center;
+}
+.container{
+    text-align: left;
+    background: var(--Dark-blue);
+    border-radius: 25px;
+    margin:5em 1em;
+    padding: 1.5em ;
+    max-width: 30vw;
+}
+.container-thank{
+    text-align: center;
+    background: var(--Dark-blue);
+    border-radius: 25px;
+    margin: 5em 1.5em;
+    padding: 1.5em;
+    max-width: 30vw;
+}
+.img-star{
+   
+    box-shadow: 0.5rem;
+    width: 40px;
+    height: 40px ;
+    line-height: 20px;
+    border-radius: 50%;
+    padding: .5em;
+    background:var(--Medium-grey-img) ;
+ 
+}
+.btn{
+   display: inline-block;
+   /* For a perfectly circular button: width, height and line height should be equal */
+   width: 40px;
+   height: 40px ;
+   line-height: 40px;
+   border-radius: 50%;
+   margin: 1em .75em;
+   background: var(--Medium-grey-img) ;
+   color: var(--White);
+   outline: none;
+   border: none;
+}
+.btn:hover,
+:focus{
+    background: var(--orange);
+    color: var(--White);
+}
+#btn-submit{
+   width: 100%;
+   height: 40px;
+   border-radius: 12px;
+   outline: none;
+   border: none;
+   background: var(--orange);
+   color: var(--White);
+}
+#btn-submit:hover,
+:focus{
+    background: var(--White);
+    color: var(--orange);
+}
+a:hover,
+:focus{
+    color: var(--orange);
+}
+.btn-rating{
+    width: 70%;
+    height: 40px;
+    margin: 1em .75em;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background: var(--Medium-grey-img);
+    color: var(--orange);
+}
